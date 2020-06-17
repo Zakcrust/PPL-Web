@@ -16,16 +16,17 @@
                                 <div class="text-center">
                                     <h1 class="h4 text-gray-900 mb-4"><strong>Login</strong></h1>
                                 </div>
-                                <form class="user">
+                                <form action="<?php echo base_url('User/Login') ?>" class="user" method="POST">
                                     <div class="form-group">
-                                        <input type="text" class="form-control form-control-user" id="email" name="email" placeholder="Masukkan Email">
+                                        <input type="text" class="form-control form-control-user" id="user" name="user" placeholder="Masukkan Username">
                                     </div>
                                     <div class="form-group">
-                                        <input type="password" class="form-control form-control-user" id="password" name="password" placeholder="Password">
+                                        <input type="password" class="form-control form-control-user" id="pass" name="pass" placeholder="Password">
                                     </div>
-                                    <a href="<?php echo base_url('user/Tambah_Bis') ?>" class="btn btn-primary btn-user btn-block">
+                                    <button type="submit" class="btn btn-primary btn-user btn-block">Login</button>
+                                    <!-- <a href="<?php echo base_url('User/Login') ?>" class="btn btn-primary btn-user btn-block">
                                         Login
-                                    </a>
+                                    </a> -->
                                 </form>
                             </div>
                         </div>
