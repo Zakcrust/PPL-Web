@@ -15,10 +15,10 @@
                                 <div class="text-center">
                                     <h1 class="h2 text-gray-900 mb-4"><strong>Tambah Bis</strong></h1>
                                 </div>
-                                <form class="user">
+                                <form class="user" method="POST" action="">
                                     <div class="form-group">
                                         <label>Nama Bis</label>
-                                        <input type="text" class="form-control" name='busName' id='busName' placeholder="Masukan nama bis" />
+                                        <input type="text" class="form-control" name='bus' id='bus' placeholder="Masukan nama bis" />
 
                                     </div>
                                     <div class="form-group">
@@ -32,7 +32,7 @@
                                     <div class="form-group">
                                         <label>Rute</label>
                                         <input type="text" name='via[]' class='form-control via' style='width:95%!important' placeholder="Masukan Nama Kota atau Tempat" class="form-control " />
-                                        <span id='viaList'>
+                                        <span id='via'>
                                         </span>
                                         <a href='#' id='addVia' title='Tambah Kota Yang Dilewati'><i class='soap-icon-plus circle'></i></a>
                                     </div>
@@ -44,45 +44,45 @@
                                     <div class="form-group">
                                         <label>Fasilitas</label>
                                         <br>
-                                        <label><input type="checkbox" name="facilities" value='Stopkontak' />
+                                        <label><input type="checkbox" name="facilities[]" id="facilities" value='1' />
                                             Stopkontak<br></label>
                                         <br>
-                                        <label><input type="checkbox" name="facilities" value='Makanan dan Minuman' />
+                                        <label><input type="checkbox" name="facilities[]" id="facilities" value='2' />
                                             Makanan dan
                                             Minuman<br></label>
                                         <br>
-                                        <label><input type="checkbox" name="facilities" value='AC' /> AC <br></label>
+                                        <label><input type="checkbox" name="facilities[]" id="facilities" value='3' /> AC <br></label>
                                         <br>
-                                        <label><input type="checkbox" name="facilities" value='Hiburan' /> Hiburan <br>
+                                        <label><input type="checkbox" name="facilities[]" id="facilities" value='4' /> Hiburan <br>
                                         </label>
                                         <br>
-                                        <label><input type="checkbox" name="facilities" value='Bantal dan Selimut' />
+                                        <label><input type="checkbox" name="facilities[]" id="facilities" value='5' />
                                             Bantal dan
                                             Selimut<br></label>
                                         <br>
-                                        <label><input type="checkbox" name="facilities" value='Bagasi' />
+                                        <label><input type="checkbox" name="facilities[]" id="facilities" value='6' />
                                             Bagasi<br></label>
                                         <br>
-                                        <label><input type="checkbox" name="facilities" value='Kursi Recliner' /> Kursi
+                                        <label><input type="checkbox" name="facilities[]" id="facilities" value='7' /> Kursi
                                             Recliner<br></label>
                                         <br>
-                                        <label><input type="checkbox" name="facilities" value='Ruang Merokok' /> Ruang
+                                        <label><input type="checkbox" name="facilities[]" id="facilities" value='8' /> Ruang
                                             Merokok<br></label>
                                         <br>
-                                        <label><input type="checkbox" name="facilities" value='Sandaran Kaki' />
+                                        <label><input type="checkbox" name="facilities[]" id="facilities" value='9' />
                                             Sandaran Kaki<br></label>
                                         <br>
-                                        <label><input type="checkbox" name="facilities" value='Toilet' />
+                                        <label><input type="checkbox" name="facilities[]" id="facilities" value='10' />
                                             Toilet<br></label>
                                         <br>
-                                        <label><input type="checkbox" name="facilities" value='Tempat Istirahat' />
+                                        <label><input type="checkbox" name="facilities[]" id="facilities" value='11' />
                                             Tempat Istirahat<br></label>
                                         <br>
                                     </div>
                                     <div class="form-group">
                                         <label>Gambar Bis</label>
                                         <br>
-                                        <input class="file-upload__input-custom" type="file" name="myFile[]" id="myFile" multiple>
+                                        <input class="file-upload__input-custom" type="file" name="foto" id="foto">
 
                                     </div>
 
@@ -173,7 +173,7 @@
                 tjq("#turnBackSch").hide();
         });
         tjq("#addVia").on("click", function() {
-            tjq("#viaList").append(
+            tjq("#via").append(
                 "<span><input type='text' name='via[]' class='form-control via' style='width:90% !important;margin-top:5px;' class='input-text full-width ' /> <a href='#' class='removeVia' title='Hapus'><i class='soap-icon-minus circle'></i></a></span>"
             );
             tjq(".removeVia").on("click", function() {

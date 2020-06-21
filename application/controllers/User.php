@@ -50,5 +50,33 @@ class User extends CI_Controller
         $this->load->view('templates/footer');
     }
 
+    public function simpanData()
+    {
+        $rute_data = array(
+            'kota_asal' => $this->input->post('source'),
+            'kota_tujuan' => $this->input->post('destination'),
+            'rute'      => $this->input->post('via'),
+        );
+        $facilities_data = $this->input->post('facilities');
+        $facilities = '';
+        foreach ($facilities_data as $facility) {
+            $facilities += $facility + ',';
+        }
+        $facilities = substr($facilities, 0, -1);
+
+        $foto_data = $this->input->post('foto');
+
+        $bis_data = array (
+            'nama' => $this->input->post('bus'),
+            'fasilitas' => $facilities,
+            'harga' => $this->input->post('price'),
+            'foto' => ''
+
+
+
+        );
+        $this->PageLoader->loadPage('admin', 'Tambah Bis', true);
+    }
+
 
 }
