@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-Class Admin extends CI_Model 
+Class Login extends CI_Model 
 {
     public function checkLogin($data)
     {

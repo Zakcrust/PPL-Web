@@ -16,30 +16,34 @@
                                 <div class="text-center">
                                     <h1 class="h2 text-gray-900 mb-4"><strong>Tambah Bis</strong></h1>
                                 </div>
+                                <?php
+                                $this->load->model('Data');
+                                $bis = $this->Data->get_data_by_id('bis', $rute[0]->id_bis);
+                                ?>
                                 <form class="user" method="POST" action="<?php echo base_url('User/simpanData') ?>" enctype="multipart/form-data">
                                     <div class="form-group">
                                         <label>Nama Bis</label>
-                                        <input type="text" class="form-control" name='bus' id='bus' placeholder="Masukan nama bis" />
+                                        <input type="text" value="<?php echo $bis->nama ?>" class="form-control" name='bus' id='bus' placeholder="Masukan nama bis" />
 
                                     </div>
                                     <div class="form-group">
                                         <label>Berangkat Dari</label>
-                                        <input type="text" name='source' value='' id='source' class="form-control" placeholder="Masukan Kota Asal" />
+                                        <input type="text" name='source' value="<?php echo $rute[0]->kota_asal ?>" id='source' class="form-control" placeholder="Masukan Kota Asal" />
                                     </div>
                                     <div class="form-group">
                                         <label>Pergi Ke</label>
-                                        <input type="text" value='' name='destination' id='destination' class="form-control" placeholder="Masukan Kota Tujuan" />
+                                        <input type="text" value="<?php echo $rute[0]->kota_tujuan ?>" name='destination' id='destination' class="form-control" placeholder="Masukan Kota Tujuan" />
                                     </div>
                                     <div class="form-group">
                                         <label>Rute</label>
-                                        <input type="text" name='via' class='form-control via' style='width:95%!important' placeholder="Masukan Nama Kota atau Tempat" class="form-control " />
+                                        <input type="text" name='via' value="<?php echo $bis->via ?>" class='form-control via' style='width:95%!important' placeholder="Masukan Nama Kota atau Tempat" class="form-control " />
                                         <span id='via'>
                                         </span>
                                         <a href='#' id='addVia' title='Tambah Kota Yang Dilewati'><i class='soap-icon-plus circle'></i></a>
                                     </div>
                                     <div class="form-group">
                                         <label>Tarif</label>
-                                        <input type="number" name='price' id='price' class="form-control" placeholder="Masukan tarif dalam rupiah tanpa titik" />
+                                        <input type="number" name='price' value="<?php echo $bis->harga ?>" id='price' class="form-control" placeholder="Masukan tarif dalam rupiah tanpa titik" />
                                     </div>
 
                                     <div class="form-group">

@@ -16,7 +16,7 @@
                                 <div class="text-center">
                                     <h1 class="h4 text-gray-900 mb-4"><strong>Login</strong></h1>
                                 </div>
-                                <form action="<?php echo base_url('User/Login') ?>" class="user" method="POST">
+                                <form action="<?php echo base_url('Admin/Login') ?>" class="user" method="POST">
                                     <div class="form-group">
                                         <input type="text" class="form-control form-control-user" id="user" name="user" placeholder="Masukkan Username">
                                     </div>
@@ -24,7 +24,7 @@
                                         <input type="password" class="form-control form-control-user" id="pass" name="pass" placeholder="Password">
                                     </div>
                                     <button type="submit" class="btn btn-primary btn-user btn-block">Login</button>
-                                    <!-- <a href="<?php echo base_url('User/Login') ?>" class="btn btn-primary btn-user btn-block">
+                                    <!-- <a href="<?php echo base_url('Admin/Login') ?>" class="btn btn-primary btn-user btn-block">
                                         Login
                                     </a> -->
                                 </form>

@@ -26,6 +26,7 @@ class Bis extends REST_Controller
             $return_data = array(
                 'id'   => $row->id,
                 'nama' => $row->nama,
+                'via'   => $row->via,
                 'fasilitas' => $row->fasilitas,
                 'harga' => $row->harga,
                 'deskripsi' => $row->deskripsi,

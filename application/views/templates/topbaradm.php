@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <div class="tm-main-content" id="top">
     <div class="tm-top-bar-bg"></div>
     <div class="tm-top-bar" id="tm-top-bar">
@@ -14,13 +15,13 @@
                     <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="<?php echo base_url('user/Daftar_Bis') ?>">Daftar Bis</a>
+                                <a class="nav-link" href="<?php echo base_url('Admin/Daftar_Bis') ?>">Daftar Bis</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?php echo base_url('user/Tambah_Bis') ?>">Tambah Bis</a>
+                                <a class="nav-link" href="<?php echo base_url('Admin/tambahBis') ?>">Tambah Bis</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?php echo base_url('Auth/index') ?>">Logout</a>
+                                <a class="nav-link" href="<?php echo base_url('Main/index') ?>">Logout</a>
                             </li>
                         </ul>
                     </div>

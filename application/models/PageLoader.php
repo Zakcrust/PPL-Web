@@ -11,7 +11,7 @@ Class PageLoader extends CI_Model {
         $this->load->view('templates/footer');
     }
 
-    public function loadPage($page, $pageTitle, $isAdmin) {
+    public function loadPage($page, $pageTitle, $isAdmin, $data = array()) {
         $data['title'] = $pageTitle;
         $this->load->view('templates/header', $data);
         if ($isAdmin) {

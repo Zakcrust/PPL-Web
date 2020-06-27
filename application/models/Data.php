@@ -22,4 +22,11 @@ Class Data extends CI_Model {
     {
         $this->db->insert($table, $data);
     }
+
+    public function get_data_by_id($table, $id)
+    {
+        return $this->db->get_where($table, array('id' => $id))->row();
+    }
+
+
 }

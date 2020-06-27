@@ -14,20 +14,20 @@
                     <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link active" href="<?php echo base_url('Auth/index') ?>">Beranda <span class="sr-only">(current)</span></a>
+                                <a class="nav-link active" href="<?php echo base_url('Main/index') ?>">Beranda <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?php echo base_url('Auth/Pencarian') ?>">Yuk Cari</a>
+                                <a class="nav-link" href="<?php echo base_url('Main/Pencarian') ?>">Yuk Cari</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?php echo base_url('Auth/Tips_Trik') ?>">Tips dan Trik</a>
+                                <a class="nav-link" href="<?php echo base_url('Main/Tips_Trik') ?>">Tips dan Trik</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?php echo base_url('Auth/about') ?>">Tentang Kami</a>
+                                <a class="nav-link" href="<?php echo base_url('Main/about') ?>">Tentang Kami</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="<?php echo base_url('Auth/login') ?>">Login</a>
+                                <a class="nav-link" href="<?php echo base_url('Main/login') ?>">Login</a>
                             </li>
                         </ul>
                     </div>
