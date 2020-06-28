@@ -20,7 +20,10 @@
                                 $this->load->model('Data');
                                 $bis = $this->Data->get_data_by_id('bis', $rute[0]->id_bis);
                                 ?>
-                                <form class="user" method="POST" action="<?php echo base_url('User/simpanData') ?>" enctype="multipart/form-data">
+                                <form class="user" method="POST" action="<?php echo base_url('Admin/updateData') ?>" enctype="multipart/form-data">
+                                    
+                                    <input type="hidden" value="<?php echo $bis->id ?>" class="form-control" name='bus_id' id='bus_id' />
+                                    <input type="hidden" value="<?php echo $rute[0]->id ?>" class="form-control" name='rute_id' id='rute_id' />
                                     <div class="form-group">
                                         <label>Nama Bis</label>
                                         <input type="text" value="<?php echo $bis->nama ?>" class="form-control" name='bus' id='bus' placeholder="Masukan nama bis" />

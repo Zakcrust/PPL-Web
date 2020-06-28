@@ -21,7 +21,7 @@
             <p></p>
             <p>Jakarta (Kampung Rambutan)-Surabaya (bungurasih)
                 <br>Rp 186.000</p>
-            <a href="<?php echo base_url('Auth/detail') ?>" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">Info Lengkap</a>
+            <a href="<?php echo base_url('Main/detail') ?>" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">Info Lengkap</a>
         </div>
     </section>
     <section class="clearfix tm-slideshow-section tm-slideshow-section-reverse">

@@ -16,7 +16,7 @@
                                 <div class="text-center">
                                     <h1 class="h2 text-gray-900 mb-4"><strong>Tambah Bis</strong></h1>
                                 </div>
-                                <form class="user" method="POST" action="<?php echo base_url('User/simpanData') ?>" enctype="multipart/form-data">
+                                <form class="user" method="POST" action="<?php echo base_url('Admin/simpanData') ?>" enctype="multipart/form-data">
                                     <div class="form-group">
                                         <label>Nama Bis</label>
                                         <input type="text" class="form-control" name='bus' id='bus' placeholder="Masukan nama bis" />
